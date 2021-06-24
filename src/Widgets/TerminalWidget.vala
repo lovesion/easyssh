@@ -171,7 +171,7 @@ namespace EasySSH {
 
         public void active_shell() {
             if(ssh){
-                this.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/sh"},
+                this.spawn_sync(Vte.PtyFlags.DEFAULT, null, {"/bin/zsh"},
                                         null, SpawnFlags.SEARCH_PATH, null, out this.child_pid, null);
             }else{
                 string dir = GLib.Environment.get_current_dir ();
