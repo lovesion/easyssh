@@ -57,3 +57,8 @@ To install, use `ninja install`, then execute with `com.github.muriloventuroso.e
     sudo ninja install
     com.github.muriloventuroso.easyssh
 
+Pacman-based(Arch/Manjaro/Others) :
+```
+ meson build --prefix=/usr -D libunity=false -D ubuntu-bionic-patched-vte=false -D patched-vte=true
+ ninja -C build install
+```
