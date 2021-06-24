@@ -78,7 +78,7 @@ namespace EasySSH {
         public void start_connection() {
             var builder = new StringBuilder ();
             if(settings.sync_ssh_config == false){
-                builder.append("ssh " + dataHost.username + "@" + dataHost.host);
+                builder.append("zssh " + dataHost.username + "@" + dataHost.host);
                 if(dataHost.port != ""){
                     builder.append(" -p " + dataHost.port);
                 }
@@ -96,7 +96,7 @@ namespace EasySSH {
                 }
                 builder.append("\n");
             } else {
-                builder.append("ssh ");
+                builder.append("zssh ");
                 builder.append(dataHost.name.split(",")[0]);
                 builder.append("\n");
             }
