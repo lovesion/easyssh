@@ -3,6 +3,8 @@
 <h1 align="center">EasySSH</h1>
 
 ## The SSH connection manager to make your life easier.
+## Using zsh and zssh to make your life easier and easier.
+## Thanks to the project 'easyssh'!
 
 A complete, efficient and easy-to-use manager. Create and edit connections, groups, customize the terminal, with multiple instances of the same connection.
 
@@ -28,9 +30,6 @@ A complete, efficient and easy-to-use manager. Create and edit connections, grou
 ![Screenshot](data/screenshot2.png)
 
 
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.muriloventuroso.easyssh)
-
-
 ## Developing and Building
 
 If you want to hack on and build EasySSH yourself, you'll need the following dependencies:
@@ -43,6 +42,9 @@ If you want to hack on and build EasySSH yourself, you'll need the following dep
 * meson
 * valac
 * gpg
+* zsh
+* lrzsz
+* zssh
 
 Run `meson build` to configure the build environment and run `ninja test` to build and run automated tests
 
@@ -54,21 +56,4 @@ To install, use `ninja install`, then execute with `com.github.muriloventuroso.e
 
     sudo ninja install
     com.github.muriloventuroso.easyssh
-
-
-## Install with Flatpak
-
-Install:
-    
-    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    flatpak install flathub com.github.muriloventuroso.easyssh
-
-Run:
-
-    flatpak run com.github.muriloventuroso.easyssh
-
-
------
-
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.muriloventuroso.easyssh)
 
